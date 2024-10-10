@@ -17,6 +17,6 @@ Burger.com es un sitio web interactivo diseñado para mostrar productos relacion
 - HTML
 - CSS
 - JavaScript
-  [NOTE]
+ ## [NOTE]
   Proyecto a mejorar, añadiendo las secciones restantes, y solucionando fallos en el navegador
 
