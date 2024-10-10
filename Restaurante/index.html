@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="web site icon" href="./img/favicon-img.jpeg" type="image/x-icon" class="logo">
+    <link rel="stylesheet" href="style.css">
+    <title>Burger.com</title>
+</head>
+<body>
+    <div class="homePage">
+        <div class="navbar">
+            <div class="left">
+               
+                <button onclick="toggleNavbar()" id="open"><img src="./img-home/menu.jpeg" alt=""></button>
+            </div>
+        
+        <div class="logo">
+            <img src="./img-home/logo.png" alt="Logo" />
+        </div>
+        <ul class="nav">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#menu">Menu</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+        <div class="banner">
+            <div class="text">
+                <h3 class="heder">THE ULTIMATE</h3>
+                <h1 class="exe">Burger Club</h1>
+                <p class="paragrif">Savor the Flavor, Join the Club!</p>
+                <div class="allimg">
+                    <div class="press" onclick="image1()">
+                        <img src="./img-home/bg1.jpeg" alt="Error" class="image">
+                    </div>
+                    <div class="press" onclick="image2()">
+                        <img src="./img-home/bg2.jpeg" alt="Error" class="image">
+                    </div>
+                    <div class="press" onclick="image3()">
+                        <img src="./img-home/bg3.jpeg" alt="Error" class="image">
+                    </div>
+                    <div class="press" onclick="image4()">
+                        <img src="./img-home/bg4.jpeg" alt="Error" class="image">
+                    </div>
+                </div>
+            </div>
+            <div class="picture" id="picture"></div>    
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
