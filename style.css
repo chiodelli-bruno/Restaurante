@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.homePage {
+    width: 100%;
+    height: 100vh;
+    background-color:#044a33;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    background-color: #0e1903;
+    padding: 12px 0;
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px; 
+    background: linear-gradient(to bottom, rgba(14, 14, 14, 1) 0%, rgba(14, 14, 14, 0) 100%);
+    pointer-events: none; 
+    z-index: 1;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.nav {
+    list-style: none;
+    display: flex; 
+    justify-content: flex-end;
+    margin: 0; 
+    padding: 0; 
+    flex-grow: 1; 
+}
+
+.nav-item {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav-item:last-of-type {
+    margin-right: 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#open img {
+    width: 30px;
+    height: auto;
+}
+
+.sections {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+    margin: 0; 
+    padding: 0; 
+}
+
+.nav-item {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav-item:last-of-type {
+    margin-right: 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.burger {
+    display: none;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+@media screen and (max-width: 720px) {
+    .banner {
+        flex-direction: column-reverse; 
+        align-items: center;
+    }
+}
+.text {
+    place-items: center;
+    margin-top: 50px;
+}
+
+.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heder {
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ADBC9F;
+    text-align: center;
+}
+
+.exe {
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    color: #FBFADA;
+    text-align: center;
+}
+
+.paragrif {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ADBC9F;
+    text-align: center;
+}
+
+.picture {
+    width: 550px;
+    height: 550px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./img/remove1.jpeg);
+}
+
+.allimg {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 70px;
+}
+
+#open{
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+#open img{
+    width: 29px;
+    height: 25px;
+}
+.image {
+    width: 120px;
+    height: 120px;
+    opacity: 0px;
+    border-radius: 20%;
+}
+@media screen and (max-width: 720px) {
+    .logo img {
+        width: 60px;
+    }
+    
+    .nav-item {
+        font-size: 16px;
+    }
+    
+    .picture {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .heder {
+        font-size: 40px;
+    }
+    
+    .exe {
+        font-size: 80px;
+    }
+    
+    .paragrif {
+        font-size: 18px;
+    }
+
+    .image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .navbar {
+        padding: 20px 0;
+    }
+}
+
+/* Para pantallas de 460px o menos */
+@media screen and (max-width: 460px) {
+    .logo img {
+        width: 50px;
+    }
+    
+    .nav-item {
+        font-size: 14px;
+    }
+    .navbar {
+        padding: 6px 0; 
+        flex-direction: column;
+    }
+    .picture {
+        width: 300px;
+        height: 300px;
+        margin-top: 5px;
+    }
+
+    .heder {
+        font-size: 30px;
+    }
+    
+    .exe {
+        font-size: 60px;
+    }
+    
+    .paragrif {
+        font-size: 16px;
+    }
+
+    .image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .banner {
+        margin-top: 10px;
+    }
+
+    .text {
+        margin-top: 30px;
+    }
+
+    .allimg {
+        gap: 5px;
+    }
+}
