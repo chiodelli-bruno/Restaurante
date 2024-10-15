@@ -23,3 +23,11 @@ function toggleNavbar() {
     }
   }
   
+  window.addEventListener('resize', function ()  {
+      const navbarList = document.getElementById("navbarList");
+      if(window.innerWidth > 720){
+        navbarList.style.display = "flex"
+      } else {
+        navbarList.style.display = "none"
+      }
+    });

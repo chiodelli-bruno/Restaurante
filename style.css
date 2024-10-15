@@ -65,6 +65,11 @@ body {
 .nav-item {
     font-size: 18px;
     font-weight: 400;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3 ease;
 }
 
 .nav-item:last-of-type {
@@ -108,7 +113,10 @@ body {
     text-decoration: none;
     color: #fff;
 }
-
+.nav-item a:hover{
+    background-color: #044a33;
+    border-radius: 5px;
+}
 .burger {
     display: none;
 }
@@ -175,7 +183,6 @@ body {
 }
 
 #open{
-    
     display: none;
     justify-content: center;
     align-items: center;
@@ -197,24 +204,19 @@ body {
     .logo img {
         width: 60px;
     }
-    
     .nav-item {
         font-size: 16px;
     }
-    
     .picture {
         width: 400px;
         height: 400px;
     }
-    
     .heder {
         font-size: 40px;
     }
-    
     .exe {
         font-size: 80px;
     }
-    
     .paragrif {
         font-size: 18px;
     }
@@ -230,26 +232,46 @@ body {
 
     .nav {
         display: none;
+        position: absolute;
+        top: 100%; 
+        right: 0;
+        background-color: #0e1903; 
+        width: 100%; 
+        text-align: center;
+        flex-direction: column; 
+        padding: 10px 0;
+    }
+    .navbar.active .nav {
+        display: flex;
     }
 
     .navbar {
         padding: 20px 0;
+        justify-content: space-between;
+    }
+
+    #open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-/* Para pantallas de 460px o menos */
 @media screen and (max-width: 460px) {
     .logo img {
         width: 50px;
     }
-    
+
     .nav-item {
         font-size: 14px;
     }
+
     .navbar {
-        padding: 6px 0; 
+        padding: 6px 0;
         flex-direction: column;
+        align-items: center;
     }
+
     .picture {
         width: 300px;
         height: 300px;
@@ -259,11 +281,11 @@ body {
     .heder {
         font-size: 30px;
     }
-    
+
     .exe {
         font-size: 60px;
     }
-    
+
     .paragrif {
         font-size: 16px;
     }
@@ -283,5 +305,18 @@ body {
 
     .allimg {
         gap: 5px;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        background-color: #0e1903;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar.active .nav {
+        display: flex;
     }
 }
